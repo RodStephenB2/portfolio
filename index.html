@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rod Stephen Abella | Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #0f172a;
+    color: #e2e8f0;
+    line-height: 1.6;
+}
+
+/* HERO SECTION */
+
+.hero {
+    text-align: center;
+    padding: 80px 20px;
+    background: linear-gradient(135deg, #1e293b, #020617);
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    color: #94a3b8;
+    font-size: 1.2rem;
+}
+
+.hero button {
+    margin-top: 20px;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 30px;
+    background: #6366f1;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.hero button:hover {
+    background: #818cf8;
+}
+
+/* SECTIONS */
+
+.section {
+    max-width: 1100px;
+    margin: auto;
+    padding: 60px 20px;
+}
+
+.section h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2rem;
+}
+
+/* CARD STYLE */
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: #1e293b;
+    padding: 25px;
+    border-radius: 15px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    background: #334155;
+}
+
+/* EXPERIENCE */
+
+.experience-item {
+    background: #1e293b;
+    padding: 25px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+}
+
+.experience-item h3 {
+    color: #818cf8;
+}
+
+/* CONTACT */
+
+.contact {
+    text-align: center;
+}
+
+.contact p {
+    margin: 8px 0;
+}
+
+/* FOOTER */
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #020617;
+    margin-top: 40px;
+    color: #64748b;
+}
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+    .hero h1 {
+        font-size: 1.8rem;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- HERO -->
+<section class="hero">
+    <h1>Rod Stephen Abella</h1>
+    <p>Technical Support Specialist | E-commerce & CRM Support</p>
+    <button onclick="document.getElementById('contact').scrollIntoView()">Contact Me</button>
+</section>
+
+<!-- ABOUT -->
+<section class="section">
+    <h2>About Me</h2>
+    <p style="text-align:center; max-width:700px; margin:auto;">
+        Dedicated and results-driven customer support professional with several years of
+        experience in BPO specializing in technical support, chat and email customer
+        service, and e-commerce assistance. Passionate about solving problems and delivering
+        excellent customer experience.
+    </p>
+</section>
+
+<!-- SKILLS -->
+<section class="section">
+    <h2>Core Skills</h2>
+    <div class="card-container">
+
+        <div class="card">Technical Troubleshooting</div>
+        <div class="card">Customer Support & Experience</div>
+        <div class="card">Email & Chat Support</div>
+        <div class="card">E-commerce Assistance</div>
+        <div class="card">Data Documentation</div>
+        <div class="card">Team Collaboration</div>
+
+    </div>
+</section>
+
+<!-- TOOLS -->
+<section class="section">
+    <h2>Tools & Platforms</h2>
+    <div class="card-container">
+
+        <div class="card">Shopify</div>
+        <div class="card">NetSuite</div>
+        <div class="card">Notion</div>
+        <div class="card">Slack</div>
+        <div class="card">Google Workspace</div>
+        <div class="card">Microsoft Office</div>
+
+    </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section class="section">
+    <h2>Work Experience</h2>
+
+    <div class="experience-item">
+        <h3>Subject Matter Expert – Foundever</h3>
+        <p>2022 – 2024</p>
+        <ul>
+            <li>Handled escalations and complex customer cases</li>
+            <li>Maintained quality service performance</li>
+            <li>Supported team workflow and knowledge assistance</li>
+        </ul>
+    </div>
+
+    <div class="experience-item">
+        <h3>Technical Chat Support – TeleTech</h3>
+        <p>2018 – 2021</p>
+        <ul>
+            <li>Provided technical troubleshooting support</li>
+            <li>Handled e-commerce order and payment issues</li>
+            <li>Maintained high customer satisfaction ratings</li>
+        </ul>
+    </div>
+
+    <div class="experience-item">
+        <h3>Laboratory Sampler / Encoder – Atlas Fertilizer</h3>
+        <p>2016</p>
+        <ul>
+            <li>Collected and encoded laboratory data</li>
+            <li>Ensured reporting accuracy</li>
+        </ul>
+    </div>
+
+</section>
+
+<!-- EDUCATION -->
+<section class="section">
+    <h2>Education</h2>
+    <p style="text-align:center;">
+        Bachelor of Science in Information Technology (Undergraduate)<br>
+        University of the Visayas
+    </p>
+</section>
+
+<!-- CONTACT -->
+<section class="section contact" id="contact">
+    <h2>Contact</h2>
+    <p>Email: abellarodstephen@gmail.com</p>
+    <p>Phone: +63 995 785 8949</p>
+    <p>Messenger: m.me/1ambtwo</p>
+    <p>Location: Cebu, Philippines</p>
+</section>
+
+<footer>
+    © 2026 Rod Stephen Abella
+</footer>
+
+</body>
+</html>
